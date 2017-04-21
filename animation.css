@@ -1,0 +1,190 @@
+.icon img{
+    width:auto;
+    height:40px;
+    padding:0px 4px 0px 4px;
+   
+}
+
+.header{
+    width:400px;
+    height:40px;
+    background-color:black;
+    position:fixed;
+    z-index:100;
+    opacity:0.7;
+    padding:0px;
+    max-height:40px;
+}
+.wrapper{
+    margin:0px auto;
+    padding:0px;
+    width:400px;
+    height:aoto;
+}
+
+.slides{
+    margin:4px auto;
+    width:400px;
+    height:300px;
+    overflow:hidden;
+    position:relative;
+    box-shadow:0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    
+
+}
+
+.slide{
+    position:relative;
+    width:100%;
+    height:100%;
+    padding:none;
+    margin:none;
+    z-index:-3;
+    left:0px;
+
+}
+
+.slide2{
+    position:relative;
+    width:100%;
+    height:100%;
+    padding:none;
+    margin:none;
+    left:0px;
+    z-index:5;
+    animation: example 15s cubic-bezier(0.45,-0.13, 0.52, 1.14) 0s infinite reverse;
+
+}
+
+.slideback{
+    position:relative;
+    bottom:305px;
+    left:-400px;
+    width:400px;
+    height:300px;
+    padding:none;
+    margin:none;
+    z-index:5;
+    animation: examplee 15s cubic-bezier(0.45,-0.13, 0.52, 1.14) 0s infinite reverse;
+    
+
+}
+
+.imagedesc{
+    position:absolute;
+    background-color:black;
+    color:white;
+    box-shadow:0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    width:390px;
+    height:80px;
+    padding:0px 6px;
+    margin:0px;
+    bottom:0px;
+    opacity:0.5;
+    z-index:200;
+}
+
+.heading{
+    text-align:center;
+    text-transform: uppercase;
+    line-height: 12px;
+    padding:0px;
+
+
+}
+
+.explain{
+    text-align:center;
+    text-transform: capitalize;
+}
+
+#image-1{
+    right:400px;
+}
+
+#image-2{
+    left:400px;
+}
+
+.image-1{
+    right:400px;
+    animation: image-1 7.5s cubic-bezier(0.32,-1.19, 0.68, 2.15) 0s 1 reverse;
+
+}
+
+.image-2{
+    left:400px;
+    animation: image-2 7.5s cubic-bezier(0.32,-1.19, 0.68, 2.15) 0s 1 reverse;
+
+}
+
+
+
+@keyframes example {
+   30%{
+       left:0px;
+   }
+   45%{
+       left:400px;
+       
+   }
+   85%{
+       left:400px;
+       
+   }
+   95%{
+       right:400px;
+   }
+   }
+
+@keyframes examplee {
+   30%{
+       left:-400px;
+   }
+   45%{
+       left:0px;
+       
+   }
+   85%{
+       left:0px;
+       
+   }
+   95%{
+       right:-400px;
+   }
+   }
+
+   @keyframes image-1{
+       25%{
+           right:0px;
+       }
+       50%{
+           right:0px;
+       }
+       75%{
+           right:400px;
+       }
+       100%{
+           right:400px;
+       }
+
+   }
+
+     @keyframes image-2{
+       25%{
+           left:0px;
+       }
+       50%{
+           left:0px;
+       }
+       75%{
+           left:400px;
+       }
+
+   }
+
+   #mycanvas{
+       width:400px;
+       height:300px;
+       border:2px solid green;
+   }
